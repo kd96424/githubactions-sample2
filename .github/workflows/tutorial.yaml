@@ -3,3 +3,9 @@ jobs:
     name: My first job
   my_second_job:
     name: My second job
+
+# リモートリポジトリへpush時にjobsを実行
+on: [push]
+
+# どのOSで実行するか=ubutnuの最新版を指定
+runs-on: ubuntu-latest
