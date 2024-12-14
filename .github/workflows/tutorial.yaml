@@ -1,11 +1,9 @@
-jobs:
-  my_first_job:
-    name: My first job
-  my_second_job:
-    name: My second job
+name: GitHub Actions Demo
 
-# リモートリポジトリへpush時にjobsを実行
 on: [push]
 
-# どのOSで実行するか=ubutnuの最新版を指定
-runs-on: ubuntu-latest
+jobs:
+  echo_hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello world!!"
